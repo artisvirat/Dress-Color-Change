@@ -36,15 +36,13 @@ DEFAULT_OUTPUT_PATH = os.path.join(ROOT_DIR, 'output')
 
 # Resnet101
 class DressConfig(Config): 
-    """Configuration for training on the toy  dataset.
-    Derives from the base Config class and overrides some values.
-    """
+
     # Give the configuration a recognizable name
     NAME = "dress"
 
     # We use a GPU with 12GB memory, which can fit two images.
     # Adjust down if you use a smaller GPU.
-    IMAGES_PER_GPU = 2
+    IMAGES_PER_GPU = 1
 
     # Number of classes (including background)
     NUM_CLASSES = 1 + 1  # Background + dress
